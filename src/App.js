@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import firebase from "firebase";
 import "./App.css";
 
+import FileUpload from "./FileUpload";
+
 class App extends Component {
   constructor() {
     super();
@@ -52,6 +54,7 @@ class App extends Component {
           />
           <p>Hola {this.state.user.displayName}!</p>
           <button onClick={this.handleLogout}>Salir</button>
+          <FileUpload />
         </div>
       );
     } else {
